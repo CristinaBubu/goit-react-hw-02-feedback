@@ -1,7 +1,6 @@
 import style from './statistics.module.css';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
 
 class Statistics extends Component {
   static defaultProps = {
@@ -20,24 +19,23 @@ class Statistics extends Component {
         <ul className={style.statistics_list}>
           {Object.entries(this.props.state).map(([key, value]) => {
             return (
-              <li className={style.statistics_item} key={shortid.generate()}>
+              <li className={style.statistics_item}>
                 <span
                   className={style.statistics_name}
-                  key={shortid.generate()}
                 >
                   {key}:{' '}
                 </span>
-                <span key={shortid.generate()}>{value}</span>
+                <span>{value}</span>
               </li>
             );
           })}
-          <li className={style.statistics_item} key={shortid.generate()}>
-            <span key={shortid.generate()}>Total: </span>
-            <span key={shortid.generate()}>{this.props.total}</span>
+          <li className={style.statistics_item}>
+            <span>Total: </span>
+            <span>{this.props.total}</span>
           </li>
-          <li className={style.statistics_item} key={shortid.generate()}>
-            <span key={shortid.generate()}>Positive feedback: </span>
-            <span key={shortid.generate()}>
+          <li className={style.statistics_item}>
+            <span>Positive feedback: </span>
+            <span>
               {this.props.positivePercentage}%
             </span>
           </li>
