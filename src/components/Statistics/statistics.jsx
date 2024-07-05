@@ -31,11 +31,11 @@ class Statistics extends Component {
               </li>
             );
           })}
-          <li className={style.statistics__item} key={shortid.generate()}>
+          <li className={style.statistics_item} key={shortid.generate()}>
             <span key={shortid.generate()}>Total: </span>
             <span key={shortid.generate()}>{this.props.total}</span>
           </li>
-          <li className={style.statistics__item} key={shortid.generate()}>
+          <li className={style.statistics_item} key={shortid.generate()}>
             <span key={shortid.generate()}>Positive feedback: </span>
             <span key={shortid.generate()}>
               {this.props.positivePercentage}%
