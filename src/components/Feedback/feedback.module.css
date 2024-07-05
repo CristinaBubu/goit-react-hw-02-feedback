@@ -1,0 +1,18 @@
+.feedback {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #d12692;
+  }
+  .feedback_button {
+    padding: 5px 10px;
+    margin: 5px;
+    text-transform: capitalize;
+    border-color: #d12692;
+    background-color: #eccde0;
+    color: #d12692;
+  }
